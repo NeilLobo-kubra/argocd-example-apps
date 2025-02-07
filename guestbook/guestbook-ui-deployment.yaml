@@ -8,10 +8,12 @@ spec:
   selector:
     matchLabels:
       app: guestbook-ui
+      kubra.io/owners: Neil-ui
   template:
     metadata:
       labels:
         app: guestbook-ui
+        kubra.io/owners: Neil-ui
     spec:
       containers:
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
