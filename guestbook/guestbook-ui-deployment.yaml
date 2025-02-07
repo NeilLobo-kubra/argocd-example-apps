@@ -9,7 +9,6 @@ spec:
     matchLabels:
       app: guestbook-ui
       kubra.io/owners: Neil-ui
-      kubraowners: Neil-ui-2
   template:
     metadata:
       labels:
