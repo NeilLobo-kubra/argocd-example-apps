@@ -2,6 +2,14 @@ apiVersion: v1
 kind: Service
 metadata:
   name: guestbook-ui
+  labels:
+    app: guestbook-ui
+    tier: frontend
+    environment: production
+    app.kubernetes.io/name: guestbook-ui
+    app.kubernetes.io/instance: guestbook
+    app.kubernetes.io/part-of: guestbook
+    kubraowners: argocd
 spec:
   ports:
   - port: 80
